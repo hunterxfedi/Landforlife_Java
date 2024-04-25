@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<HBox fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="827.0" prefWidth="1320.0" styleClass="root" stylesheets="@../../../style/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="esprit.manettek.demo.Controllers.back.ProduitPanier.userBackProductManagementForm">
+
+    <children>
+
+        <Pane prefHeight="781.0" prefWidth="1040.0" style="-fx-background-color: #f3fafa;">
+
+            <children>
+
+                <Label layoutX="47.0" layoutY="128.0" text="Product Management">
+
+                    <font>
+
+                        <Font name="Century Gothic Bold" size="34.0" />
+
+                    </font>
+
+                </Label>
+                <Button fx:id="addT" layoutX="864.0" layoutY="671.0" onAction="#submitProduct" prefHeight="53.0" prefWidth="162.0" style="-fx-background-color: #28a745;" styleClass="btn_workbench11" stylesheets="@../../../style/style.css" text="Submit" textFill="WHITE">
+                    <font>
+                        <Font name="Century Gothic Bold" size="13.0" />
+                    </font>
+                </Button>
+                <TextField fx:id="ProductNomField" layoutX="454.0" layoutY="296.0" prefHeight="43.0" prefWidth="235.0" style="-fx-background-color: #f3fafa; -fx-border-color: 0000;" styleClass="pane_1111" />
+                <Label layoutX="454.0" layoutY="265.0" text="Nom">
+                    <font>
+                        <Font name="Century Gothic Bold" size="18.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="ProductPrixField" layoutX="454.0" layoutY="394.0" prefHeight="43.0" prefWidth="235.0" style="-fx-background-color: #f3fafa; -fx-border-color: 0000;" styleClass="pane_1111" />
+                <Label layoutX="454.0" layoutY="363.0" text="Prix">
+                    <font>
+                        <Font name="Century Gothic Bold" size="18.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="ProductQuantiteField" layoutX="769.0" layoutY="293.0" prefHeight="43.0" prefWidth="235.0" style="-fx-background-color: #f3fafa; -fx-border-color: 0000;" styleClass="pane_1111" />
+                <Label layoutX="769.0" layoutY="262.0" text="Quantite">
+                    <font>
+                        <Font name="Century Gothic Bold" size="18.0" />
+                    </font>
+                </Label>
+                <Label layoutX="769.0" layoutY="372.0" text="Statut">
+                    <font>
+                        <Font name="Century Gothic Bold" size="18.0" />
+                    </font>
+                </Label>
+                <Button fx:id="btn_workbench1111121" layoutX="692.0" layoutY="671.0" onAction="#cancelProduct" prefHeight="53.0" prefWidth="162.0" style="-fx-background-color: #dc3545;" styleClass="btn_workbench11" stylesheets="@../../../style/style.css" text="Cancel" textFill="WHITE">
+                    <font>
+                        <Font name="Century Gothic Bold" size="13.0" />
+                    </font>
+                </Button>
+                <Label fx:id="errorNom" layoutX="456.0" layoutY="339.0" textFill="RED">
+                    <font>
+                        <Font size="13.0" />
+                    </font>
+                </Label>
+                <Label fx:id="errorQuantite" layoutX="773.0" layoutY="339.0" textFill="RED">
+                    <font>
+                        <Font size="13.0" />
+                    </font>
+                </Label>
+                <Label fx:id="errorPrix" layoutX="457.0" layoutY="436.0" textFill="RED">
+                    <font>
+                        <Font size="13.0" />
+                    </font>
+                </Label>
+                <Label fx:id="errorCategorie" layoutX="772.0" layoutY="442.0" textFill="RED">
+                    <font>
+                        <Font size="13.0" />
+                    </font>
+                </Label>
+                <Button layoutX="384.0" layoutY="676.0" mnemonicParsing="false" onAction="#uploadImage" prefHeight="43.0" prefWidth="168.0" style="-fx-background-color: #f3fafa; -fx-border-color: 0;" styleClass="pane_1111" text="Upload Image" />
+                <Text fx:id="uploadImagePath" layoutX="629.0" layoutY="730.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+                <Text fx:id="errorUploadingImage" fill="RED" layoutX="457.0" layoutY="766.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+                <ImageView fx:id="imageUploaded" fitHeight="251.0" fitWidth="311.0" layoutX="55.0" layoutY="251.0" pickOnBounds="true" preserveRatio="true" />
+                <TextField fx:id="ProductStatutField" layoutX="769.0" layoutY="399.0" prefHeight="43.0" prefWidth="235.0" style="-fx-background-color: #f3fafa; -fx-border-color: 0000;" styleClass="pane_1111" />
+                <Label fx:id="InscriMessageLabel" layoutX="365.0" layoutY="733.0" prefHeight="21.0" prefWidth="235.0" />
+                <Button fx:id="home" layoutX="101.0" layoutY="680.0" onAction="#back" prefHeight="53.0" prefWidth="162.0" style="-fx-background-color: #dc3545;" styleClass="btn_workbench11" stylesheets="@../../../style/style.css" text="back" textFill="WHITE">
+                    <font>
+                        <Font name="Century Gothic Bold" size="13.0" />
+                    </font>
+                </Button>
+
+            </children>
+
+        </Pane>
+
+    </children>
+
+</HBox>

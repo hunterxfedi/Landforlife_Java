@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Pagination?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="827.0" prefWidth="1320.0" styleClass="root" stylesheets="@../../../../style/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="esprit.manettek.demo.Controllers.Front.ProduitPanier.userFrontGymProduit">
+
+   <children>
+
+      <VBox prefHeight="781.0" prefWidth="281.0">
+         <children>
+            <AnchorPane fx:id="side_ankerpane" prefHeight="200.0" prefWidth="200.0" />
+         </children></VBox>
+
+      <Pane prefHeight="559.0" prefWidth="1040.0" style="-fx-background-color: #f3fafa;">
+
+         <children>
+            <Pagination fx:id="pagination" layoutX="24.0" layoutY="130.0" prefHeight="573.0" prefWidth="966.0" />
+            <ImageView fitHeight="38.0" fitWidth="30.0" layoutX="115.0" layoutY="35.0" onMouseClicked="#openBasket" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../assets/icons/shopping-basket.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="nbrPannier" layoutX="141.0" layoutY="59.0" text="0">
+               <font>
+                  <Font name="Century Gothic" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="49.0" layoutY="42.0" text="Basket">
+               <font>
+                  <Font name="Century Gothic Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="35.0" layoutY="80.0" text="Products">
+               <font>
+                  <Font name="Century Gothic Bold" size="34.0" />
+               </font>
+            </Label>
+            <Label fx:id="errorPanierProduit" layoutX="51.0" layoutY="203.0" textFill="RED" wrapText="true">
+               <font>
+                  <Font name="Century Gothic" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="userNameLabel" layoutX="876.0" layoutY="31.0" prefHeight="21.0" prefWidth="132.0" />
+
+         </children>
+
+      </Pane>
+
+   </children>
+
+</HBox>

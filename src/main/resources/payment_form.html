@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receipt</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 800px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .receipt-container {
+            width: 600px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            text-align: center;
+        }
+
+        .receipt-header {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .receipt-info {
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+
+        .receipt-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .receipt-table th,
+        .receipt-table td {
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+
+        .receipt-table th {
+            background-color: #eee;
+            font-weight: bold;
+        }
+
+        .receipt-total {
+            font-size: 18px;
+            margin-top: 20px;
+        }
+
+        .receipt-details {
+            margin-top: 20px;
+        }
+
+        .receipt-details p {
+            margin-bottom: 10px;
+        }
+        button {
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 10px;
+            font-size: 16px;
+            width: calc(50% - 5px); /* Adjusted width for two buttons */
+        }
+
+        .pay-now {
+            background-color: green;
+            color: #fff;
+        }
+
+        .print {
+            background-color: orange;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+<div class="receipt-container">
+
+    <img src="logo.png" width="250" height="250"/>
+    <h1 class="receipt-header">Thanks For Your Business!</h1>
+    <p class="receipt-info">Your order:<br><span id="todayDate"></span></p>
+    <table class="receipt-table">
+        <tbody id="receipt-table-body"></tbody>
+    </table>
+    <p class="receipt-total">Total: <span id="total"></span></p>
+    <div class="receipt-details">
+        <h3>Your details</h3>
+        <p>Fedi kaabi<br>Tunis</p>
+        <p>Notice something wrong? Contact our support team and we'll be happy to help.</p>
+    </div>
+    <button class="pay-now" onclick="payNow()">💲Pay now</button>
+    <button class="print" onclick="printReceipt()">🖨️ Print</button>
+
+</div>
+</body>
+<script>
+    function payNow() {
+        java.payNowBtnClickedReceipt();
+    }
+
+    function printReceipt() {
+        java.printBtnClickedReceipt();
+    }
+</script>
+</html>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="827.0" prefWidth="1320.0" styleClass="root" stylesheets="@../../../../style/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="esprit.manettek.demo.Controllers.back.ProduitPanier.UserBackProductManagement">
+
+    <children>
+
+        <VBox prefHeight="781.0" prefWidth="281.0" />
+
+        <Pane prefHeight="781.0" prefWidth="1040.0" style="-fx-background-color: #f3fafa;">
+
+            <Label layoutX="47.0" layoutY="128.0" text="Product Management">
+
+                <font>
+
+                    <Font name="Century Gothic Bold" size="34.0" />
+
+                </font>
+
+            </Label>
+            <TableView fx:id="tableView" layoutX="47.0" layoutY="291.0" prefHeight="390.0" prefWidth="727.0" style="-fx-background-color: #f3fafa; -fx-border-color: black;" stylesheets="@../../../../style/style.css">
+                <columns>
+                    <TableColumn fx:id="NomCo" prefWidth="229.60007858276367" styleClass="column2" text="Nom" />
+                    <TableColumn fx:id="PrixCo" prefWidth="172.0" styleClass="column2" text="Prix" />
+                    <TableColumn fx:id="QtCo" minWidth="0.0" prefWidth="105.60003662109375" styleClass="column2" text="Quantite" />
+                    <TableColumn fx:id="StatutCo" minWidth="0.0" prefWidth="214.39996337890625" styleClass="column2" text="Statut" />
+                </columns>
+            </TableView>
+            <Button fx:id="btn_workbench111112" layoutX="199.0" layoutY="691.0" onAction="#addProduct" prefHeight="53.0" prefWidth="162.0" style="-fx-background-color: #1e2b3c;" styleClass="btn_workbench11" stylesheets="@../../../../style/style.css" text="Add" textFill="WHITE">
+                <font>
+                    <Font name="Century Gothic Bold" size="13.0" />
+                </font>
+            </Button>
+            <Button fx:id="updateButton" layoutX="393.0" layoutY="691.0" onAction="#updateProduct" prefHeight="53.0" prefWidth="162.0" style="-fx-background-color: #1e2b3c;" styleClass="btn_workbench11" stylesheets="@../../../../style/style.css" text="Update" textFill="WHITE">
+                <font>
+                    <Font name="Century Gothic Bold" size="13.0" />
+                </font>
+            </Button>
+            <Button fx:id="removeButton" layoutX="571.0" layoutY="690.0" onAction="#removeProduct" prefHeight="53.0" prefWidth="162.0" style="-fx-background-color: #1e2b3c;" styleClass="btn_workbench11" stylesheets="@../../../../style/style.css" text="Remove" textFill="WHITE">
+                <font>
+                    <Font name="Century Gothic Bold" size="13.0" />
+                </font>
+                <opaqueInsets>
+                    <Insets />
+                </opaqueInsets>
+            </Button>
+            <Button fx:id="printButton" layoutX="842.0" layoutY="690.0" onAction="#print" prefHeight="53.0" prefWidth="162.0" style="-fx-background-color: #1e2b3c;" styleClass="btn_workbench11" stylesheets="@../../../../style/style.css" text="Print" textFill="WHITE">
+                <font>
+                    <Font name="Century Gothic Bold" size="13.0" />
+                </font>
+            </Button>
+            <TextField fx:id="searchField" layoutX="615.0" layoutY="238.0" prefHeight="43.0" prefWidth="235.0" promptText="Search... " style="-fx-background-color: #f3fafa; -fx-border-color: 0000;" styleClass="pane_1111" />
+            <ComboBox fx:id="filterComboBox" layoutX="487.0" layoutY="237.0" prefHeight="43.0" prefWidth="113.0" promptText="Filter By" style="-fx-background-color: #5bc0de; -fx-border-color: #5bc0de;" styleClass="pane_1111" stylesheets="@../../../../style/style.css">
+                <items>
+                    <FXCollections fx:factory="observableArrayList">
+                        <String fx:value="Nom" />
+                        <String fx:value="Prix" />
+                        <String fx:value="Quantite" />
+                        <String fx:value="Description" />
+                        <String fx:value="Categorie" />
+                    </FXCollections>
+                </items>
+            </ComboBox>
+            <Button fx:id="btn_workbench13" layoutX="872.0" layoutY="237.0" onAction="#searchProduct" prefHeight="43.0" prefWidth="132.0" style="-fx-background-color: #1e2b3c;" styleClass="btn_workbench11" stylesheets="@../../../../style/style.css" text="Search" textFill="WHITE">
+                <font>
+                    <Font name="Century Gothic Bold" size="13.0" />
+                </font>
+            </Button>
+         <Button fx:id="bak" layoutX="20.0" layoutY="690.0" onAction="#backHome" prefHeight="53.0" prefWidth="162.0" style="-fx-background-color: #1e2b3c;" styleClass="btn_workbench11" stylesheets="@../../../../style/style.css" text="back" textFill="WHITE">
+            <font>
+               <Font name="Century Gothic Bold" size="13.0" />
+            </font>
+         </Button>
+
+        </Pane>
+
+    </children>
+
+</HBox>

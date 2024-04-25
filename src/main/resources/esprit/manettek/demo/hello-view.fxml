@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" prefHeight="745.0" prefWidth="1270.0" spacing="20.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="esprit.manettek.demo.Controllers.HelloController">
+  <padding>
+    <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+  </padding>
+   <Button fx:id="prodfront" mnemonicParsing="false" onAction="#productfront" prefHeight="31.0" prefWidth="130.0" text="product front" />
+   <Button fx:id="produitback" mnemonicParsing="false" onAction="#onclickProduit" prefHeight="31.0" prefWidth="135.0" text="Products" />
+  <Button onAction="#onHelloButtonClick" prefHeight="36.0" prefWidth="138.0" text="logout" />
+
+  <Label fx:id="welcomeText" />
+</VBox>

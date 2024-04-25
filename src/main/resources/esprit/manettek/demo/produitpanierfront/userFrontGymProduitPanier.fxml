@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Pagination?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="827.0" prefWidth="1320.0" styleClass="root" stylesheets="@../../../../style/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="esprit.manettek.demo.Controllers.Front.ProduitPanier.userFrontGymProduitPanier">
+
+   <children>
+
+      <VBox prefHeight="781.0" prefWidth="281.0">
+
+         <children>
+
+            <AnchorPane fx:id="side_ankerpane" prefHeight="827.0" prefWidth="281.0" style="-fx-background-color: #f3fafa;" styleClass="side_ankerpane" stylesheets="@../../../../style/style.css">
+               <children>
+                  <Button fx:id="backprod" layoutX="96.0" layoutY="269.0" mnemonicParsing="false" onAction="#backProduct" prefHeight="31.0" prefWidth="117.0" text="Products" />
+               </children></AnchorPane>
+
+         </children>
+
+      </VBox>
+
+      <Pane prefHeight="781.0" prefWidth="1040.0" style="-fx-background-color: #f3fafa;">
+
+         <children>
+            <ImageView fitHeight="38.0" fitWidth="30.0" layoutX="115.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../assets/icons/shopping-basket.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="nbrPannier" layoutX="141.0" layoutY="59.0" text="3">
+               <font>
+                  <Font name="Century Gothic" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="49.0" layoutY="42.0" text="Basket">
+               <font>
+                  <Font name="Century Gothic Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="100.0" text="Basket">
+               <font>
+                  <Font name="Century Gothic Bold" size="34.0" />
+               </font>
+            </Label>
+            <Button fx:id="payNowButton" layoutX="838.0" layoutY="110.0" onAction="#payNow" prefHeight="39.0" prefWidth="160.0" style="-fx-background-color: #28a745;" styleClass="btn_workbench11" stylesheets="@../../../../style/style.css" text="Pay Now" textFill="WHITE">
+               <font>
+                  <Font name="Century Gothic Bold" size="13.0" />
+               </font>
+            </Button>
+            <Label fx:id="TotalPriceField" layoutX="604.0" layoutY="110.0" text="Total Price: 200 DT">
+               <font>
+                  <Font name="Century Gothic Bold" size="20.0" />
+               </font>
+            </Label>
+            <Pagination fx:id="pagination" layoutX="34.0" layoutY="163.0" prefHeight="594.0" prefWidth="956.0" />
+            <Label fx:id="userNameLabel" layoutX="901.0" layoutY="40.0" prefHeight="21.0" prefWidth="117.0" />
+
+         </children>
+
+      </Pane>
+
+   </children>
+
+</HBox>

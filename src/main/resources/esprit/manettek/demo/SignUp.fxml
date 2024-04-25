@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="539.0" prefWidth="480.0" styleClass="blue-panel" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="esprit.manettek.demo.Controllers.signUpController">
+   <children>
+      <Label text="Sign Up" textFill="#2196f3">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <VBox.margin>
+            <Insets left="20.0" />
+         </VBox.margin>
+      </Label>
+      <VBox prefHeight="61.0" prefWidth="480.0">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="40.0" prefWidth="200.0">
+               <children>
+                  <TextField fx:id="tfNom" promptText="Family Name" styleClass="tf_box" HBox.hgrow="ALWAYS">
+                     <HBox.margin>
+                        <Insets left="15.0" />
+                     </HBox.margin></TextField>
+                  <FontAwesomeIconView fill="WHITE" glyphName="USER" size="1.3em">
+                     <HBox.margin>
+                        <Insets right="15.0" />
+                     </HBox.margin></FontAwesomeIconView>
+               </children>
+            </HBox>
+            <Label fx:id="lbNom" prefHeight="35.0" prefWidth="478.0" textFill="RED" />
+         </children>
+      </VBox>
+      <VBox layoutX="10.0" layoutY="104.0" prefHeight="61.0" prefWidth="480.0">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="40.0" prefWidth="200.0">
+               <children>
+                  <TextField fx:id="tfPrenom" promptText="Name" styleClass="tf_box" HBox.hgrow="ALWAYS">
+                     <HBox.margin>
+                        <Insets left="15.0" />
+                     </HBox.margin>
+                  </TextField>
+                  <FontAwesomeIconView fill="WHITE" glyphName="USER" size="1.3em">
+                     <HBox.margin>
+                        <Insets right="15.0" />
+                     </HBox.margin>
+                  </FontAwesomeIconView>
+               </children>
+            </HBox>
+            <Label fx:id="lbPrenom" prefHeight="35.0" prefWidth="478.0" textFill="RED" />
+         </children>
+      </VBox>
+      <VBox layoutX="10.0" layoutY="281.0" prefHeight="62.0" prefWidth="480.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="26.0" prefWidth="433.0" spacing="20.0">
+               <children>
+                  <DatePicker fx:id="tfdate" prefHeight="26.0" prefWidth="403.0" promptText="birth" />
+                  <FontAwesomeIconView fill="WHITE" glyphName="USER" size="1.3em">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </FontAwesomeIconView>
+               </children>
+            </HBox>
+            <Label fx:id="lbdate" prefHeight="31.0" prefWidth="469.0" textFill="RED">
+               <padding>
+                  <Insets top="-30.0" />
+               </padding>
+            </Label>
+         </children>
+      </VBox>
+      <VBox layoutX="10.0" layoutY="148.0" prefHeight="61.0" prefWidth="480.0">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="40.0" prefWidth="200.0">
+               <children>
+                  <TextField fx:id="tfAdress" promptText="Adress" styleClass="tf_box" HBox.hgrow="ALWAYS">
+                     <HBox.margin>
+                        <Insets left="15.0" />
+                     </HBox.margin>
+                  </TextField>
+                  <FontAwesomeIconView fill="WHITE" glyphName="USER" size="1.3em">
+                     <HBox.margin>
+                        <Insets right="15.0" />
+                     </HBox.margin>
+                  </FontAwesomeIconView>
+               </children>
+            </HBox>
+            <Label fx:id="lbAdress" prefHeight="35.0" prefWidth="478.0" textFill="RED" />
+         </children>
+      </VBox>
+      <VBox prefHeight="66.0" prefWidth="480.0">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="40.0" prefWidth="200.0">
+               <children>
+                  <TextField fx:id="tfEmail" prefHeight="30.0" prefWidth="428.0" promptText="Email" styleClass="tf_box" HBox.hgrow="ALWAYS" />
+                  <FontAwesomeIconView fill="WHITE" glyphName="USER" size="1.3em" />
+               </children>
+               <VBox.margin>
+                  <Insets left="15.0" right="15.0" top="15.0" />
+               </VBox.margin>
+            </HBox>
+            <Label fx:id="lbEmail" prefHeight="35.0" prefWidth="478.0" textFill="RED" />
+         </children>
+      </VBox>
+      <VBox layoutX="10.0" layoutY="40.0" prefHeight="62.0" prefWidth="480.0">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="31.0" prefWidth="478.0">
+               <children>
+                  <TextField fx:id="tfConfirmEmail" prefHeight="30.0" prefWidth="428.0" promptText="Confirm Email" styleClass="tf_box" HBox.hgrow="ALWAYS">
+                     <HBox.margin>
+                        <Insets left="15.0" />
+                     </HBox.margin></TextField>
+                  <FontAwesomeIconView fill="WHITE" glyphName="USER" size="1.3em">
+                     <HBox.margin>
+                        <Insets right="15.0" />
+                     </HBox.margin></FontAwesomeIconView>
+               </children>
+            </HBox>
+            <Label fx:id="lbConfirmEmail" prefHeight="31.0" prefWidth="469.0" textFill="RED">
+               <padding>
+                  <Insets top="-30.0" />
+               </padding></Label>
+         </children>
+      </VBox>
+      <VBox layoutX="10.0" layoutY="40.0" prefHeight="77.0" prefWidth="480.0">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="40.0" prefWidth="200.0">
+               <children>
+                  <PasswordField fx:id="tfPassword" prefHeight="30.0" prefWidth="443.0" promptText="Password">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin></PasswordField>
+                  <FontAwesomeIconView fill="WHITE" glyphName="LOCK" layoutX="448.0" layoutY="31.0" size="1.3em" />
+               </children>
+               <VBox.margin>
+                  <Insets left="15.0" right="15.0" top="20.0" />
+               </VBox.margin>
+            </HBox>
+            <Label fx:id="lbPassword" prefHeight="35.0" prefWidth="478.0" textFill="RED" />
+         </children>
+      </VBox>
+      <VBox layoutX="10.0" layoutY="40.0" prefHeight="77.0" prefWidth="480.0">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="33.0" prefWidth="437.0">
+               <children>
+                  <PasswordField fx:id="tfConfirmPassword" prefHeight="30.0" prefWidth="443.0" promptText="Confirm Password">
+                     <HBox.margin>
+                        <Insets left="15.0" />
+                     </HBox.margin></PasswordField>
+                  <FontAwesomeIconView fill="WHITE" glyphName="LOCK" layoutX="448.0" layoutY="31.0" size="1.3em" />
+               </children>
+            </HBox>
+            <Label fx:id="lbConfirmPassword" prefHeight="35.0" prefWidth="478.0" textFill="RED" />
+         </children>
+      </VBox>
+      <Button fx:id="btnsignUp" mnemonicParsing="false" onAction="#fnSignup" prefHeight="38.0" prefWidth="456.0" styleClass="blue-btn" text="Sign Up" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+         <VBox.margin>
+            <Insets left="15.0" right="15.0" top="20.0" />
+         </VBox.margin>
+      </Button>
+   </children>
+</VBox>
